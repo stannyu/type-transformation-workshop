@@ -14,6 +14,6 @@ type tests = [
   Expect<Equal<ReturnValue, { id: string; name: string; email: string }>>,
 ];
 
-function Awaited<T> {
+function Awaited<T>() {
   // Your code here
 }

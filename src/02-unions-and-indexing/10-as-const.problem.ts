@@ -1,3 +1,4 @@
+import { as } from "vitest/dist/reporters-3OMQDZar";
 import { Equal, Expect } from "../helpers/type-utils";
 
 /**
@@ -11,7 +12,7 @@ export const programModeEnumMap = {
   SELF_DIRECTED: "selfDirected",
   PLANNED_ONE_ON_ONE: "planned1on1",
   PLANNED_SELF_DIRECTED: "plannedSelfDirected",
-};
+} as const;
 
 export type GroupProgram = typeof programModeEnumMap["GROUP"];
 export type AnnouncementProgram = typeof programModeEnumMap["ANNOUNCEMENT"];
